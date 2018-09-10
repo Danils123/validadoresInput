@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Validaciones</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+    <div class="container">
+        <br>
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h1>Formulario y validaciones</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div style="display: none" id="alertMsj" class="alert" role="alert">
+
+                    <br><br>
+                </div>
+            </div>
+        </div>
+        <br><br>
+        <form class="" id="formPrincipal">
+            <div class="form-group">
+                <label for="ipEmail">Dirección electrónica</label>
+                <input type="email" class="form-control" id="ipEmail" placeholder="name@example.com" required>
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group">
+                <label for="slCanal">Canal</label>
+                <select class="form-control" id="slCanal" required>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="exampleFormControlTextarea1">Descripción</label>
+                <textarea class="form-control" id="txDescripcion" rows="3" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="exampleInputPassword1">Password</label>
+                <input type="password" class="form-control" id="ipPass" placeholder="Password" required>
+            </div>
+            <div class="form-group">
+                <label for="exampleInputPassword1">Edad</label>
+                <input type="number" maxlength="60" minlength="18" value="18" class="form-control" id="ipEdad" required>
+            </div>
+            <br>
+            <div class="form-group">
+                <button type="button" class="btn btn-primary" id="btnSubmit">Submit</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="./scripts/lib/require.js" data-main="./scripts/common.js"></script>
+</body>
+
+</html>
